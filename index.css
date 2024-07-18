@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul li{
+    list-style: none
+}
+i{
+    font-style: normal;
+}
+body {
+    min-width: 992px;
+    height: 100%;
+    color: #333;
+    font-size: 14px;
+}
+html{
+    overflow: hidden;
+}
+.container-head {
+    display: flex;
+}
+.main-left{
+    width: 220px;
+    background-color: #f0f0f0;
+}
+.main-right{
+    /* 剩余空间填充 */
+    flex: 1;
+    padding: 10px 30px;
+}
+
+/* 左侧导航 */
+.main-item{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 220px;
+    background-color: #f0f0f0;
+}
+.music-zx{
+    padding: 15px 20px;
+    color: #777;
+}
+.main-left-zi li{
+    line-height: 40px;
+}
+.main-left-zi li a{
+    display: block;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.main-left-zi li svg{
+    padding-right: 10px;
+}
+.main-left-zi li a:hover {
+    background-color: #31c27c;
+    color: #fff;
+}
+
+/* 搜索框 */
+.main-right-zi{
+    text-align: right;
+}
+.main-right-zi input{
+    padding: 5px 10px;
+    width: 200px;
+    outline: none;
+}
+.main-right-zi svg{
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    font-weight: 700;
+    color: #777;
+}
+.main-right-tou{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/* 右侧导航栏 */
+.main-right-table{
+    text-align: center;
+    height: 50px;
+}
+.main-right-table a{
+    margin: 0 25px;
+    position: relative;
+}
+.main-right-table a:hover{
+    color: #31c27c;
+}
+.main-right-table a::before{
+    content:'';
+    width: 100%;
+    height: 2px;
+    background-color: #31c27c;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+.main-right-table a:hover::before{
+    transform: scale(1);
+    transition: all 0.5s;
+}
+/* 轮播图 */
+.main-right-lunbotu ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.main-right-lunbotu ul li{
+    flex: 0 1 49%;
+    text-align: center;
+}
+.main-right-lunbotu img{
+    border-radius: 10px;
+    max-width: 98%;
+    height: auto;
+}
+/* 原点 */
+.main-right-yuandian{
+    text-align: center;
+    padding-top: 20px;
+}
+.main-right-yuandian a{
+   display: inline-block;
+   padding: 4px;
+   border-radius: 50%;
+   background-color: #afaeae;
+   margin:0 7px;
+}
+.main-right-yuandian .touming {
+    background-color: #737373;
+}
+/* 歌单推荐 */
+.main-right-gedantuijian h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.main-right-gedantuijian ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.main-right-gedantuijian ul li{ 
+    flex: 0 1 24%;
+    /* position: relative; */
+    overflow: hidden;
+}
+.main-right-gedantuijian ul li img:hover{
+    transform: scale(1.1);
+}
+.main-right-gedantuijian ul li p{
+    margin: 10px 0;
+}
+/* 底部 */
+footer{
+    min-width: 992px;
+    height: 80px;
+}
+.footerr{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+.dibu{
+    display: flex;
+    min-width: 992px;
+    background-color: #333;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.footbut a{
+    color: #fff;
+    margin: 0 25px;
+    position: relative;
+}
+
+.footbut a:hover{
+    color: #31c27c;
+}
+.footbut a::before{
+    content:'';
+    width: 100%;
+    height: 2px;
+    background-color: #31c27c;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+.footbut a:hover::before{
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.mscname{
+    color:#fff;
+}
+
+/* #content {
+        height: 100%;
+        overflow: auto;
+    }
+body,html{
+     margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+} */
+
+/* 上下滑动 */
+.main-right {
+ width: 100%; 
+ height: 600px;
+ overflow: auto;
+    }
+
+.main-right {
+        width: 100%;
+        height: 652px;
+        overflow: auto;
+    }
